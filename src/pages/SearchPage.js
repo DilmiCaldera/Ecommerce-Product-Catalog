@@ -1,11 +1,12 @@
 import React, {useEffect} from 'react';
-import "./SearchPage.scss";
+import "../styles/SearchPage.scss";
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { STATUS } from '../../utils/status';
-import Loader from '../../components/Loader/Loader';
-import ProductList from '../../components/ProductList/ProductList';
-import { fetchAsyncSearchProduct, getSearchProducts, setSearchTerm, getSearchProductsStatus, clearSearch } from '../../store/searchSlice';
+import { STATUS} from "../services/status";
+import ProductList from "../components/ProductList";
+import { fetchAsyncSearchProduct, getSearchProducts, getSearchProductsStatus, clearSearch } from '../store/searchSlice';
+import Loader from "../components/Loader";
+
 
 const SearchPage = () => {
   const dispatch = useDispatch();

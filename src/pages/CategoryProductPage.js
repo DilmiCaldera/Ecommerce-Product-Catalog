@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
-import "./CategoryProductPage.scss";
-import ProductList from "../../components/ProductList/ProductList";
+import "../styles/CategoryProductPage.scss";
+import ProductList from "../components/ProductList";
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getAllProductsByCategory, fetchAsyncProductsOfCategory, getCategoryProductsStatus } from '../../store/categorySlice';
-import Loader from '../../components/Loader/Loader';
-import { STATUS } from '../../utils/status';
+import { getAllProductsByCategory, fetchAsyncProductsOfCategory, getCategoryProductsStatus } from '../store/categorySlice';
+import Loader from '../components/Loader';
+import { STATUS } from '../services/status';
 
 const CategoryProductPage = () => {
   const dispatch = useDispatch();

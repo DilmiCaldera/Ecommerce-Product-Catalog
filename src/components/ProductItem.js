@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {formatPrice} from "../services/helpers";
-import "../styles/ProductDetail.scss";
+import "../styles/ProductItem.scss";
 
-const ProductDetail = ({product}) => {
+const ProductItem = ({product}) => {
     return (
         <Link to = {`/product/${product?.id}`} key = {product?.id}>
             <div className='product-item bg-white'>
@@ -12,10 +12,6 @@ const ProductDetail = ({product}) => {
                     <img className='img-cover' src = {product?.images[0]} alt = {product.title} />
                 </div>
                 <div className='product-item-info fs-14'>
-                    <div className='brand'>
-                        <span>Brand: </span>
-                        <span className='fw-7'>{product?.brand}</span>
-                    </div>
                     <div className='title py-2'>
                         {product?.title}
                     </div>
@@ -30,4 +26,4 @@ const ProductDetail = ({product}) => {
     )
 }
 
-export default ProductDetail
+export default ProductItem
