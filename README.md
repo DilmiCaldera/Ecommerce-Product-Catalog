@@ -1,10 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+To run this application locally;
 
-### `npm start`
+- Clone this repository and navigate to the project directory.
+- To install the dependencies, run: `npm install` in the terminal.
+- To start the application, run: `npm start` in the terminal.
 
-This will run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Find the deployed version of the application [here](https://main--product-catalog-dc.netlify.app/).
