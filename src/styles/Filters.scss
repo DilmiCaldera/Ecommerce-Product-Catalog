@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 300px;
-  //height: 100%;
+  height: 100%;
   background-color: $clr-white;
   box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 7px;
   padding: 2rem;
@@ -13,11 +13,9 @@
   transition: $transition-ease;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Set sidebar height to viewport height */
 
   .cat-title{
     padding-bottom: 1rem;
-    padding-top: 3rem;
   }
   .sidebar-hide-btn{
     position: absolute;
@@ -30,8 +28,6 @@
   .cat-list{
     overflow-y: scroll;
     height: calc(100vh - 60px);
-    flex: 1; /* Allow content to grow and fill the available space */
-    //overflow-y: auto; /* Enable scrolling for overflow */
 
     li{
       padding: 0.8rem 0;
@@ -73,6 +69,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     margin-bottom: 1rem;
+    height: auto;
 
     &:focus {
       border-color: $clr-orange;
