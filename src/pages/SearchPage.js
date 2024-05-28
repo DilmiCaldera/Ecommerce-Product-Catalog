@@ -17,7 +17,7 @@ const SearchPage = () => {
   useEffect(() => {
     dispatch(clearSearch());
     dispatch(fetchAsyncSearchProduct(searchTerm));
-  }, [searchTerm]);
+  }, [dispatch, searchTerm]);
 
   if(searchProducts.length === 0){
     return (

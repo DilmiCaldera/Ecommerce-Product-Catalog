@@ -26,7 +26,7 @@ const ProductDetail = () => {
                 dispatch(setCartMessageOff());
             }, 2000);
         }
-    }, [cartMessageStatus]);
+    }, [cartMessageStatus, dispatch, id]);
 
     if(productSingleStatus === STATUS.LOADING) {
         return <Loader />

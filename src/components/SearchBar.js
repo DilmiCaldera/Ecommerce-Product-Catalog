@@ -19,7 +19,7 @@ const SearchBar = () => {
 
     useEffect(() => {
         dispatch(getCartTotal());
-    }, [carts])
+    }, [carts, dispatch])
 
     return (
         <nav className='navbar'>
